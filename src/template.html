@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="new-project-popup hidden">
+      <form class="new-project-form">
+        <input type="text" name="project" id="project-name" placeholder="Project Name.." autocomplete="off">
+        <div>
+          <button class="add add-project">Add</button>
+          <button class="cancel cancel-project">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="new-task-popup hidden">
+      <form class="new-task-form">
+        <input type="text" name="task" id="task-title" placeholder="Task Name.." autocomplete="off">
+        <textarea name="task-desc" id="task-desc" placeholder="Task Description.."></textarea>
+         <select id="projects-list">
+            <!-- <option selected>Todolist</option> -->
+         </select>
+         <select id="task-priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+         </select>
+         <input type="date" name="dueDate" id="task-dueDate">
+        <div>
+          <button class="add add-task">Add</button>
+          <button class="cancel cancel-task">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <header>
+      <nav>
+        <h1>Projects</h1>
+        <div class="projects"></div>
+      </nav>
+      <button class="create-project create-btn"><img src="svg/add.svg"> Create Project</button>
+    </header>
+    <main>
+      <div class="tasks">
+        <h2>Tasks</h2>
+        <ul></ul>
+        <button class="create-task create-btn"><img src="svg/add.svg"> Create Task</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
